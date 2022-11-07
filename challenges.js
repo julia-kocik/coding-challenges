@@ -41,3 +41,12 @@ const numInStr = (arr) => {
 	})
 	return newArr
 }
+
+// 3.Is it an Object?
+
+// Create a function to check whether the given parameter is an Object or not.
+
+//Solution
+function isObject(obj) {
+	return obj === Object(obj);
+}
