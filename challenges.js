@@ -22,3 +22,22 @@ const maxConsec = (arr) => {
 	}  
 	return total  
 } 
+
+// 2. Numbers in Strings
+// Create a function that takes an array of strings and returns an array with only the strings that have numbers in them. 
+// If there are no strings containing numbers, return an empty array.
+
+// Solution
+
+const numInStr = (arr) => {
+	let newArr=[]
+	arr.forEach(item => {
+		for(let i=0; i<10; i++) {
+			if(item.includes(i.toString())) {
+				newArr.push(item)
+				break;
+			}
+		}
+	})
+	return newArr
+}
