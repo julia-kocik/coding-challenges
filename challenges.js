@@ -50,3 +50,11 @@ const numInStr = (arr) => {
 function isObject(obj) {
 	return obj === Object(obj);
 }
+//4. Closures
+function greetingMaker(salutation) {
+ 	return function closure(name) {
+ 	  return salutation + ", " + name 	
+ 	}
+}
+//const greeting = greetingMaker('hello')
+//greeting('Julia')
